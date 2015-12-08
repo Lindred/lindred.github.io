@@ -30,33 +30,18 @@ a {
 }
 
 div {
-	height: 100%;
+	/* height: 100%; */
 	padding: 0;
 	margin: 0;
-	/* display: inline-block; */
-	/* float: right; */
-	/* background-color: white; */
 }
 
 #content {
+	height: 100%;
 	position: relative;
 	top: 180px;
 	right: 5vw;
 	/* text-align: right; */
-	margin: 0px;
-}
-
-#mainBG {
-	position: fixed;
-	z-index: -1;
-	height: 100%;
-	/* display: flex; */
-	/* justify-content: center; */
-	/* align-items: center; */
-	/* left: 22.5%; */
-	/* TODO: figure this out! */
-	/* min-height: 52vw; */
-	top: -5px;
+	/* margin: 0; */
 }
 
 #title_h1 {
@@ -64,19 +49,22 @@ div {
 	right: 5vw;
 	text-align: right;
 	margin-top: 0;
-	/* margin-right: 50px; */
 	font-size: 96pt;
+	font-size: 8vw;
 	font-weight: 900;
 	color: white;
 	text-shadow: #002EFF -2px 0 15px;
 }
 
-nav {
+#navItems {
 	font-size: 32pt;
 	font-weight: 900;
 	margin-left: 10vw;
+	margin-top: 0;
 	color: white;
-	display: inline-block;
+	/* display: inline-block; */
+	float: left;
+	/* background-color: pink; */
 }
 
 nav * {
@@ -96,14 +84,28 @@ ul {
 	/* transition: opacity 0.5s; */
 }
 
-#aboutText {
-	color: #002EFF;
+#aboutDiv {
+	/* position: absolute; */
+	/* right: 5vw; */
+	width: 450px;
+	/* display: inline; */
+	float: right;
+	/* background-color: pink; */
+	margin-top: 5vh;
+	/* clear: both; */
+	/* width: 30vw; */
+	/* min-width: 250px; */
+	/* float: right; */
 	/* transition: opacity 0.5s; */
 }
 
-#aboutDiv {
-	width: 400px;
-	float: right;
+#aboutText {
+	color: #002EFF;
+	/* background-color: rgba(255, 255, 255, 0.8); */
+	border-radius: 0px;
+	/* padding-left: 50px; */
+	/* text-align: right; */
+	line-height: 1.5;
 	/* transition: opacity 0.5s; */
 }
 
@@ -112,11 +114,18 @@ ul {
 }
 
 #linksDiv {
+	/* position: absolute; */
+	/* right: 5vw; */
 	float: right;
+	/* display: inline; */
+	text-align: right;
 	font-weight: 500;
-	clear: both;
+	clear: right;
+	margin-top: 10vh;
+	/* background-color: pink; */
 }
 #videoContainer {
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
