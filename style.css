@@ -1,5 +1,9 @@
 * {
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
+	/* font-family: 'Helvetica Neue', sans-serif; */
+	/* font-family: 'Arial', sans-serif; */
+	/* font-family: 'Average Sans', sans-serif; */
+	/* font-family: sans-serif; */
 }
 
 html {
@@ -9,6 +13,11 @@ html {
 }
 
 body {
+	background-image: url("img/D_comp_crop.jpg");
+	background-position: center;
+	background-size: 110vh auto;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -24,20 +33,29 @@ div {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+	/* display: inline-block; */
+	/* float: right; */
+	/* background-color: white; */
 }
 
 #content {
 	position: relative;
 	top: 180px;
 	right: 5vw;
-	text-align: right;
-	margin: 50px;
+	/* text-align: right; */
+	margin: 0px;
 }
 
 #mainBG {
 	position: fixed;
 	z-index: -1;
 	height: 100%;
+	/* display: flex; */
+	/* justify-content: center; */
+	/* align-items: center; */
+	/* left: 22.5%; */
+	/* TODO: figure this out! */
+	/* min-height: 52vw; */
 	top: -5px;
 }
 
@@ -46,20 +64,25 @@ div {
 	right: 5vw;
 	text-align: right;
 	margin-top: 0;
-	margin-right: 50px;
+	/* margin-right: 50px; */
 	font-size: 96pt;
+	font-weight: 900;
 	color: white;
 	text-shadow: #002EFF -2px 0 15px;
 }
 
 nav {
 	font-size: 32pt;
+	font-weight: 900;
+	margin-left: 10vw;
 	color: white;
-	text-shadow: #002EFF -2px 0 5px;
+	display: inline-block;
 }
 
-nav a {
+nav * {
 	color: white;
+	/* text-shadow: #002EFF -2px 0 5px; */
+	text-shadow: dimgray -2px 0 5px;
 }
 
 ul {
@@ -67,18 +90,30 @@ ul {
 	padding-left: 0;
 }
 
-p {
-	opacity: 1;
+.hidden {
+	font-size: 14pt;
+	/* opacity: 0; */
+	/* transition: opacity 0.5s; */
+}
+
+#aboutText {
 	color: #002EFF;
+	/* transition: opacity 0.5s; */
 }
 
 #aboutDiv {
 	width: 400px;
 	float: right;
+	/* transition: opacity 0.5s; */
+}
+
+#aboutText:hover {
+	opacity: 1;
 }
 
 #linksDiv {
 	float: right;
+	font-weight: 500;
 	clear: both;
 }
 #videoContainer {
@@ -88,6 +123,6 @@ p {
 }
 
 iframe {
-	width: 80vw;
-	height: 45vw;
+	width: 90vw;
+	height: 50.625vw;
 }
