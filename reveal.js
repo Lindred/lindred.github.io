@@ -6,14 +6,25 @@ function reveal()
 	var aboutText = document.getElementById('aboutText');
 	var linksNav = document.getElementById('linksNav');
 	var linksList = document.getElementById('linksList');
-	// var hidden = document.getElementsByClassName('hidden');
 
 	aboutText.style.opacity = '0';
 	linksList.style.opacity = '0';
 
-	aboutNav.addEventListener('mouseenter', function(e)
+	aboutText.addEventListener('mouseenter', function(e)
+		{
+			aboutText.style.transition = 'opacity 2s';
+			aboutText.style.opacity = '1';
+		});
+
+	aboutText.addEventListener('mouseleave', function(e)
 		{
 			aboutText.style.transition = 'opacity 1s';
+			aboutText.style.opacity = '0';
+		});
+
+	aboutNav.addEventListener('click', function(e)
+		{
+			aboutText.style.transition = 'opacity 2s';
 			aboutText.style.opacity = '1';
 		});
 
