@@ -1,3 +1,5 @@
+// $('html,body').animate({scrollTop: 500}, 1500, "easeInOutSine");
+// $('body').animate({scrollTop: $('#videoContainer').offset().top}, 1500, "easeInOutSine")
 window.onload = reveal;
 
 function reveal()
@@ -6,6 +8,11 @@ function reveal()
 	var aboutText = document.getElementById('aboutText');
 	var linksNav = document.getElementById('linksNav');
 	var linksList = document.getElementById('linksList');
+	var videoNav = document.getElementById('videoNav');
+
+	var videoContainerPosition = $('#videoContainer').offset().top;
+	var scrollDuration = 1500;
+	var easeStyle = 'easeInOutSine';
 
 	aboutText.style.opacity = '0';
 	linksList.style.opacity = '0';
@@ -24,8 +31,12 @@ function reveal()
 
 	aboutNav.addEventListener('click', function(e)
 		{
-			aboutText.style.transition = 'opacity 2s';
-			aboutText.style.opacity = '1';
+			$('body').animate({scrollTop: $('#aboutDiv').offset().top}, 1500, "easeInOutSine", function()
+					{
+						// when finished scrolling, change opacity
+						aboutText.style.transition = 'opacity 1.5s';
+						aboutText.style.opacity = '1';
+					});
 		});
 
 	aboutNav.addEventListener('mouseleave', function(e)
@@ -38,5 +49,12 @@ function reveal()
 		{
 			linksList.style.transition = 'opacity 1s';
 			linksList.style.opacity = '1';
+		});
+
+	videoNav.addEventListener('click', function(e)
+		{
+			// put scroll function here
+			// when finished scrolling, change opacity
+			$('body').animate({scrollTop: videoContainerPosition}, scrollDuration, easeStyle);
 		});
 }
