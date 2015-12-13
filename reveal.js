@@ -54,7 +54,7 @@ function reveal()
 
 	videoNav.addEventListener('click', function(e)
 		{
-			title.style.textShadow = 'red -2px 0 15px';
+			title.style.textShadow = 'red -4px 0 18px';
 			// put scroll function here
 			// when finished scrolling, change opacity
 			$('body').animate({scrollTop: videoContainerPosition}, scrollDuration, easeStyle);
