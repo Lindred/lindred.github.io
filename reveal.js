@@ -8,12 +8,12 @@ function reveal()
 	var linksList = document.getElementById('linksList');
 	var videoNav = document.getElementById('videoNav');
 
-	var videoContainerPosition = $('#videoContainer').offset().top;
+	// var videoContainerPosition = $('#videoContainer').offset().top;
 	var scrollDuration = 1500;
 	var easeStyle = 'easeInOutSine';
 
 	title.style.transition = 'text-shadow 3.0s';
-	aboutText.style.opacity = '0';
+	// aboutText.style.opacity = '0';
 
 	title.addEventListener('click', function(e)
 		{
@@ -23,17 +23,17 @@ function reveal()
 			$('body').animate({scrollTop: 0}, scrollDuration, easeStyle);
 		});
 
-	aboutText.addEventListener('mouseenter', function(e)
-		{
-			aboutText.style.transition = 'opacity 2s';
-			aboutText.style.opacity = '1';
-		});
+// 	aboutText.addEventListener('mouseenter', function(e)
+// 		{
+// 			aboutText.style.transition = 'opacity 2s';
+// 			aboutText.style.opacity = '1';
+// 		});
 
-	aboutText.addEventListener('mouseleave', function(e)
-		{
-			aboutText.style.transition = 'opacity 1s';
-			aboutText.style.opacity = '0';
-		});
+// 	aboutText.addEventListener('mouseleave', function(e)
+// 		{
+// 			aboutText.style.transition = 'opacity 1s';
+// 			aboutText.style.opacity = '0';
+// 		});
 
 	aboutNav.addEventListener('click', function(e)
 		{
@@ -41,22 +41,22 @@ function reveal()
 			$('body').animate({scrollTop: $('#aboutDiv').offset().top}, 1500, "easeInOutSine", function()
 					{
 						// when finished scrolling, change opacity
-						aboutText.style.transition = 'opacity 1.5s';
-						aboutText.style.opacity = '1';
+						// aboutText.style.transition = 'opacity 1.5s';
+						// aboutText.style.opacity = '1';
 					});
 		});
 
-	aboutNav.addEventListener('mouseleave', function(e)
-		{
-			aboutText.style.transition = 'opacity 1s';
-			aboutText.style.opacity = '0';
-		});
+// 	aboutNav.addEventListener('mouseleave', function(e)
+// 		{
+// 			aboutText.style.transition = 'opacity 1s';
+// 			aboutText.style.opacity = '0';
+// 		});
 
 	videoNav.addEventListener('click', function(e)
 		{
 			title.style.textShadow = 'red -4px 0 18px';
 			// put scroll function here
 			// when finished scrolling, change opacity
-			$('body').animate({scrollTop: videoContainerPosition}, scrollDuration, easeStyle);
+			$('body').animate({scrollTop: $('#videoContainer').offset().top}, scrollDuration, easeStyle);
 		});
 }
