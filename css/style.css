@@ -1,0 +1,133 @@
+html, * {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	width: 100vw;
+	/* height: 100vh; */
+}
+
+#bg-div {
+	/* z-index: -1; */
+}
+
+#background {
+	/* z-index: -1; */
+}
+
+p, ul {
+	margin: 0 5vw;
+	/* z-index: 1; */
+	position: relative;
+	width: 90vw;
+}
+
+#about {
+	/* top: 100vh; */
+	/* padding-top: 5vh; */
+	padding-bottom: 5vh;
+	/* float: right; */
+}
+
+#links {
+	bottom: 2vh;
+	list-style-type: none;
+	right: -2vw;
+}
+
+#links li {
+	display: inline;
+	float: right;
+	/* margin-right: 2vw; */
+}
+
+h1, span {
+	padding: 0.5%;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	/* font-size: 16pt; */
+	/* background: rgba(64, 48, 144, 0.7); */
+	background: rgba(0, 0, 0, 0.85);
+	border-radius: 2px;
+	color: white;
+	opacity: 1;
+	text-align: justify;
+	display: inline-block;
+}
+
+h1 {
+	top: 4%;
+	margin: 0 2vw;
+	font-size: 24pt;
+	font-weight: 700;
+	position: absolute;
+}
+
+#links li span {
+	padding: 2.0%;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	-webkit-transition: text-decoration 0.5s;
+	-moz-transition: text-decoration 0.5s;
+	transition: text-decoration 0.5s;
+}
+
+a:hover {
+	text-decoration: underline;
+	-webkit-transition: text-decoration 0.5s;
+	-moz-transition: text-decoration 0.5s;
+	transition: text-decoration 0.5s;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+	img, .slide {
+		width: 90vw;
+	}
+
+	#links li {
+		margin-right: 2vw;
+	}
+
+	h1, span {
+		font-size: 14pt;
+	}
+
+}
+
+/* 'desktop' */
+@media (min-width: 769px) {
+	img, .slide {
+		/* display: flex; */
+		position: relative;
+		margin: 5vh auto;
+		height: 90vh;
+		/* align-items: right; */
+		left: 45%;
+		-webkit-transform: translate(-50%, 0%);
+		-ms-transform: translate(-50%, 0%);
+		transform: translate(-50%, 0%);
+	}
+
+	#links li {
+		margin-right: 2vw;
+	}
+
+	h1, span {
+		font-size: 16pt;
+	}
+}
+
+img, .slide {
+	/* width: 90vw; */
+	float: none;
+	margin: 5vh 5vw;
+	border-radius: 5px;
+	box-shadow: 10px 20px 30px dimgray;
+	-webkit-box-shadow: 10px 20px 30px dimgray;
+	-moz-box-shadow: 10px 20px 30px dimgray;
+}
