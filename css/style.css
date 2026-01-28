@@ -3,10 +3,6 @@ html, * {
 	padding: 0;
 }
 
-body {
-	background-color: black;
-}
-
 main {
 	width: 100vw;
 	/* height: 100vh; */
@@ -54,7 +50,7 @@ h1, span {
 	/* background: rgba(64, 48, 144, 0.7); */
 	background: rgba(0, 0, 0, 0.85);
 	border-radius: 2px;
-	color: red;
+	color: white;
 	opacity: 1;
 	text-align: justify;
 	display: inline-block;
@@ -73,7 +69,7 @@ h1 {
 }
 
 a {
-	color: red;
+	color: white;
 	text-decoration: none;
 	-webkit-transition: text-decoration 0.5s;
 	-moz-transition: text-decoration 0.5s;
