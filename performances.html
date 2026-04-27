@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performances & CV | Lindred - Experimental Musician</title>
+    <meta name="description" content="Performances, commissions, and CV for Lindred — experimental electronic musician based in Los Angeles and Berlin. Composer for film, dance-theater, and installations.">
+    <link rel="canonical" href="https://lindred.com/performances.html">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Performances & CV | Lindred">
+    <meta property="og:site_name" content="Lindred">
+    <meta property="og:url" content="https://lindred.com/performances.html">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Performances, commissions, and CV for Lindred — experimental electronic musician.">
+    <meta property="og:image" content="https://lindred.com/img/websitepola_1.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Performances & CV | Lindred">
+    <meta name="twitter:description" content="Performances, commissions, and CV for Lindred — experimental electronic musician.">
+    <meta name="twitter:image" content="https://lindred.com/img/websitepola_1.jpg">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "Lindred",
+        "description": "Experimental electronic musician based in Los Angeles and Berlin.",
+        "url": "https://lindred.com",
+        "image": "https://lindred.com/img/websitepola_1.jpg",
+        "genre": ["Experimental", "Electronic", "Ambient", "Drone"],
+        "sameAs": [
+            "https://www.instagram.com/lindred_/",
+            "https://www.youtube.com/channel/UCceQoN2roOrca73s3YyV-zQ",
+            "https://soundcloud.com/lindred",
+            "https://lindred.bandcamp.com/"
+        ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@1,200;1,300&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+
+        :root {
+            --void: #050404;
+            --parchment: #d9cfc2;
+            --dim: #5a5048;
+            --blood: #6b1212;
+            --gold: #c8a96e;
+        }
+
+        body {
+            background: var(--void);
+            color: var(--parchment);
+            font-family: 'IM Fell English', Georgia, serif;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        body::after {
+            content: '';
+            position: fixed; inset: 0; z-index: 9998;
+            opacity: 0.055;
+            background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 32px 52px;
+            display: flex; justify-content: space-between; align-items: center;
+            background: linear-gradient(to bottom, rgba(5,4,4,0.95), transparent);
+        }
+
+        .nav-links { display: flex; gap: 56px; list-style: none; }
+        .nav-links a {
+            font-family: 'IM Fell English', serif;
+            font-size: 20px; letter-spacing: 2px; font-style: italic;
+            color: rgba(217,207,194,0.4); text-decoration: none; transition: color 0.5s;
+        }
+        .nav-links a:hover, .nav-links a.active { color: rgba(217,207,194,0.9); }
+
+        /* PAGE */
+        .page-wrap {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 160px 40px 120px;
+        }
+
+        /* HEADING */
+        .page-title {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 200;
+            font-size: 48px;
+            letter-spacing: 6px;
+            color: var(--parchment);
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        /* COMING SOON VESSEL */
+        .forthcoming-vessel {
+            text-align: center;
+            padding: 80px 40px;
+            border: 1px solid rgba(200,169,110,0.08);
+            margin-bottom: 80px;
+            position: relative;
+        }
+
+        .forthcoming-vessel::before,
+        .forthcoming-vessel::after {
+            content: '✝';
+            position: absolute;
+            color: rgba(200,169,110,0.15);
+            font-size: 10px;
+            letter-spacing: 2px;
+        }
+        .forthcoming-vessel::before { top: 16px; left: 50%; transform: translateX(-50%); }
+        .forthcoming-vessel::after { bottom: 16px; left: 50%; transform: translateX(-50%); }
+
+        .forthcoming-label {
+            font-family: 'IM Fell English', serif;
+            font-size: 11px;
+            letter-spacing: 5px;
+            font-style: italic;
+            color: rgba(200,169,110,0.35);
+            text-transform: uppercase;
+            margin-bottom: 32px;
+        }
+
+        .forthcoming-text {
+            font-family: 'Spectral', serif;
+            font-style: italic;
+            font-weight: 200;
+            font-size: 28px;
+            letter-spacing: 3px;
+            color: rgba(217,207,194,0.55);
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .forthcoming-sub {
+            font-size: 13px;
+            font-style: italic;
+            color: var(--dim);
+            line-height: 2;
+            max-width: 400px;
+            margin: 0 auto 40px;
+        }
+
+        .contact-link {
+            font-family: 'IM Fell English', serif;
+            font-size: 18px; font-style: italic;
+            color: var(--blood); opacity: 0.7;
+            text-decoration: none; transition: opacity 0.4s;
+            letter-spacing: 1px;
+        }
+        .contact-link:hover { opacity: 1; }
+
+        /* CV SECTIONS — placeholder outlines */
+        .cv-section {
+            margin-bottom: 56px;
+            border-top: 1px solid rgba(255,255,255,0.04);
+            padding-top: 40px;
+        }
+
+        .cv-section-title {
+            font-family: 'IM Fell English', serif;
+            font-size: 11px;
+            letter-spacing: 5px;
+            font-style: italic;
+            color: rgba(200,169,110,0.3);
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        .cv-placeholder {
+            font-size: 13px;
+            font-style: italic;
+            color: rgba(90,80,72,0.5);
+            line-height: 2.2;
+            letter-spacing: 1px;
+        }
+
+        /* FOOTER */
+        .coda {
+            padding: 60px 56px 80px; text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.03);
+        }
+        .coda-links {
+            display: flex; gap: 40px; justify-content: center;
+            flex-wrap: wrap; list-style: none; margin-bottom: 40px;
+        }
+        .coda-links a {
+            font-family: 'IM Fell English', serif;
+            font-size: 13px; font-style: italic;
+            color: var(--dim); text-decoration: none; transition: color 0.4s;
+        }
+        .coda-links a:hover { color: var(--parchment); }
+        .coda-mark {
+            font-family: 'IM Fell English', serif;
+            font-size: 11px; letter-spacing: 3px; font-style: italic;
+            color: rgba(255,255,255,0.05);
+        }
+
+        @media (max-width: 768px) {
+            nav { padding: 20px 24px; justify-content: center; flex-wrap: wrap; gap: 16px; }
+            .nav-links { gap: 24px; justify-content: center; }
+            .nav-links a { font-size: 16px; }
+            .page-wrap { padding: 140px 24px 80px; }
+            .page-title { font-size: 34px; }
+            .forthcoming-text { font-size: 22px; }
+            .coda { padding-left: 24px; padding-right: 24px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul class="nav-links">
+        <li><a href="/#listen">Listen</a></li>
+        <li><a href="/#media">Media</a></li>
+    </ul>
+    <ul class="nav-links">
+        <li><a href="performances.html" class="active">Performances</a></li>
+        <li><a href="mailto:lindredsound@gmail.com">Contact</a></li>
+    </ul>
+</nav>
+
+<main class="page-wrap">
+
+    <h1 class="page-title">Performances</h1>
+
+    <div class="forthcoming-vessel">
+        <p class="forthcoming-label">forthcoming</p>
+        <p class="forthcoming-text">this page is being assembled</p>
+        <p class="forthcoming-sub">A full CV — live performances, commissions, scores, and press — is on its way. For bookings and inquiries in the meantime:</p>
+        <a href="mailto:lindredsound@gmail.com" class="contact-link">write me ✝</a>
+    </div>
+
+    <section class="cv-section" aria-label="Live performances">
+        <h2 class="cv-section-title">Live</h2>
+        <p class="cv-placeholder">— forthcoming —</p>
+    </section>
+
+    <section class="cv-section" aria-label="Commissions and scores">
+        <h2 class="cv-section-title">Commissions &amp; Scores</h2>
+        <p class="cv-placeholder">— forthcoming —</p>
+    </section>
+
+    <section class="cv-section" aria-label="Press and features">
+        <h2 class="cv-section-title">Press</h2>
+        <p class="cv-placeholder">— forthcoming —</p>
+    </section>
+
+</main>
+
+<footer class="coda">
+    <ul class="coda-links">
+        <li><a href="https://www.instagram.com/lindred_/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UCceQoN2roOrca73s3YyV-zQ" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+        <li><a href="https://soundcloud.com/lindred" target="_blank" rel="noopener noreferrer">SoundCloud</a></li>
+        <li><a href="https://lindred.bandcamp.com/" target="_blank" rel="noopener noreferrer">Bandcamp</a></li>
+    </ul>
+    <div class="coda-mark">Lindred</div>
+</footer>
+
+</body>
+</html>
